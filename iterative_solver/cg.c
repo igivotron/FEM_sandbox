@@ -21,6 +21,7 @@ int conjugateGradient(double **A, double *b, int n){
 
     // Gradient conjugué
     // Je calcul rtr une fois par boucle au lieu de trois fois
+    // TODO : Arrêter la boucle si le résidu est suffisament petit
     rtr = 0;
     for (int i=0; i<n; i++) rtr += r[i]*r[i];
 
